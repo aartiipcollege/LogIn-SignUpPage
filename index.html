@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup/Login Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Signup Box -->
+    <div class="form-box" id="signup-box">
+      <form id="signupForm" class="signup-form">
+
+        <h2>Sign Up</h2>
+
+        <!-- Signup Input Fields -->
+        <div class="name-fields">
+          <input type="text" id="firstName" placeholder="First Name" required />
+          <input type="text" id="lastName" placeholder="Last Name" required />
+        </div>
+
+        <input type="email" id="email" placeholder="Email" required />
+
+        <div class="password-group">
+          <input type="password" id="password" placeholder="Password" required />
+          <!-- Show/Hide the Password -->
+          <span onclick="togglePassword('password', this)">🐵</span>
+        </div>
+
+        <div class="password-group">
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+          <!-- Show/Hide the Password -->
+          <span onclick="togglePassword('confirmPassword', this)">🐵</span>
+        </div>
+
+        <label class="terms">
+          <input type="checkbox" id="terms" /> I Agree with <span>privacy</span> and <span>policy</span>
+        </label>
+
+        <!-- SignUp Button -->
+        <button type="submit">Sign up</button>
+        <p class="bottom-text">Already have an account ? <a href="#" onclick="showLogin()">Log In</a></p>
+        <p id="signMsg" class="message"></p>
+      </form>
+    </div>
+
+    <!-- Login Box -->
+    <div class="form-box hidden" id="login-box">
+      <form id="loginForm">
+        <h2>Log In</h2>
+
+        <!-- Login Input Fields -->
+        <input type="text" id="loginEmail" placeholder="Email" required />
+        <div class="password-group">
+          <input type="password" id="loginPassword" placeholder="Password" required />
+          <!-- Show/Hide the Password -->
+          <span onclick="togglePassword('loginPassword', this)">🐵</span>
+        </div>
+
+        <div class="terms ">
+          <label><input type="checkbox" id="remember" /> Remember me</label>
+          <a href="#" class="forgot">Forgot Password</a>
+        </div>
+
+        <!-- Login Button -->
+        <button type="submit" class="login-btn">Log in</button>
+        <p class="bottom-text">Don't have an account? <a href="#" onclick="showSignup()">Sign In</a></p>
+        <p id="loginMsg" class="message"></p>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
