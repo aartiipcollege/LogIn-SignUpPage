@@ -1,0 +1,120 @@
+/* Background and container */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121530;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #121530;
+  padding: 30px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+
+}
+
+/* Hide */
+.hidden {
+  display: none;
+}
+
+/* Links */
+a {
+  color: #ff3f81;
+  text-decoration: none;
+}
+
+/* Heading */
+form h2 {
+  color: #fff;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid #ff3f81;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+
+/* First & Last Name */
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+/* Password container with toggle */
+.password-group {
+  position: relative;
+}
+.password-group span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Checkbox and terms */
+.terms {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.terms span {
+  color: #ff3f81;
+  cursor: pointer;
+}
+
+.container #loginForm .terms {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff3f81;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #dc336b;
+}
+
+/* Bottom text */
+.bottom-text {
+  font-size: 13px;
+  color: #ccc;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Message */
+.message {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
